@@ -1,2 +1,2 @@
 # Hiking-webapp
-Web-app for educational purpose
+Web-app for educational porpuse
