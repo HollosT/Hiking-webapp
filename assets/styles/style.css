@@ -2,4 +2,163 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --green: #204330;
+    --yellow: #fedf48;
+}
+
+.flex {
+    display: flex;
+}
+
+h1 {
+    color: var(--yellow);
+    line-height: 5vw;
+    font-size: 1rem;
+}
+
+h2 {
+    font-family: 'Noticia Text', serif;
+}
+
+/* header */
+header {
+    background-color: var(--green);
+}
+
+nav {
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+nav img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.hide {
+    display: none;
+}
+
+section > div {
+    flex-direction: column;
+}
+
+/* map */
+.map {
+    background-image: url(../images/overall_map.png);
+    background-size: cover;
+    width: 100%;
+    height: 90vw;;
+}
+
+h2 {
+    text-align:center;
+    font-size: 10vw;
+    padding: 1rem 0 0.5rem 0
+}
+
+h4 {
+    text-align: center;
+    font-size: 5vw;
+
+}
+
+.btn {
+    color: var(--yellow);
+    background-color: var(--green);
+    padding: 0.5rem 0.8rem;
+    font-size: 3.5vw;
+    font-weight: bold;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-style: none;
+    box-shadow: 3px 3px 5px rgba(94, 94, 94, 0.467);
+}
+
+.btn-div {
+    flex-direction: row;
+    padding: 1rem;
+}
+
+
+/* cards */
+
+#card1 {
+    background-image: url(../images/card-Bjergbanestigen.jpg);
+    background-position-y: 30%;
+}
+
+#card2 {
+    background-image: url(../images/card-Egholm.jpg);
+}
+
+#card3 {
+    background-image: url(../images/card-Mulbjerge.jpg);
+}
+
+#card4 {
+    background-image: url(../images/card-Poulstrup.jpg);
+}
+
+#card5 {
+    background-image: url(../images/card-oesterdaalennord.jpg);
+}
+
+#card6 {
+    background-image: url(../images/card-oesterdaalenSyd.jpg);
+}
+.card {
+    background-size: cover;
+    width: 100%;
+    height: 40vw;
+    border-radius: 1rem;
+    padding: 2rem;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 4px 4px 6px rgba(94, 94, 94, 0.467);
+}
+
+.main-card {
+    padding: 0.5rem 1rem;
+    
+}
+
+h3 {
+    font-size: 6vw;
+    color: rgba(255, 255, 255, 0.808);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.808);
+    width: fit-content;
+}
+
+p {
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 0.808);
+    line-height: 1rem;
+    font-weight: bold;
+}
+/* footer */
+footer {
+    background-color: var(--green);
+    color: var(--yellow);
+    padding: 3rem;
+    gap: 4rem;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 1rem;
+}
+.fa-facebook, .fa-instagram {
+    font-size: 4rem;
+    color: var(--yellow);
 }
