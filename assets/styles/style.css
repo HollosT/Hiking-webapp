@@ -47,9 +47,6 @@ nav img {
     display: none;
 }
 
-.show {
-    display: block;
-}
 
 section > div {
     flex-direction: column;
