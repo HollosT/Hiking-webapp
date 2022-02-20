@@ -147,6 +147,45 @@ p {
     line-height: 1rem;
     font-weight: bold;
 }
+
+
+/* Detailed Cards*/
+
+.detailedCards {
+    border-radius: 1rem;
+    background-color: rgba(190, 188, 188, 0.808);
+    padding: 2rem 1rem;
+    margin-top: .5rem;
+}
+
+
+
+.detailedCards p {
+    color: rgba(0, 0, 0, 0.534);
+    padding: .5rem 0;
+}
+
+.detailedCards button:nth-child(5) {
+    margin: .5rem auto;
+    margin-bottom: 1rem;
+    align-content: center;
+    display: flex;
+
+}
+
+
+
+/* Images */
+img {
+    width: 48%;
+    height: auto;
+    padding: .5rem 0;
+}
+.gap {
+    gap: .5rem;
+}
+
+
 /* footer */
 footer {
     background-color: var(--green);

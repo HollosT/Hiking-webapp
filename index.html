@@ -45,7 +45,7 @@
         <p>1 walking route, 14km<br>
           1 biking path</p>
       </div>
-      <article class="hide">
+      <article id="article" class=" detailedCards">
         <p> <strong>Route:</strong>from Sventrup via Oldstien to Nibe/Godthaab</p>
         <p><strong>How to get there:</strong>take the train from the Aalborg station.</p>
         <p>
@@ -53,16 +53,20 @@
           which leads to the center of Nibe, where Nibe railway station once stood.
           The path continues through Nibe and towards Valpsund along the regional
           cycle route 29 (dark blue color on the map). </p>
+          <div class="flex gap">
+        <img src="assets/images/Bjergbanestigen_gallery1.jpg" alt="Bjergbanestien" />
+        <img src="assets/images/Bjergbanestigen_gallery2.jpg" alt="Bjergbanestien" />
+        </div>
+        <button class="btn">More</button>
 
-        <img src="/assets/images/Bjergbanestigen_gallery1.jpg" alt="Bjergbanestien" />
-        <img src="/assets/images/Bjergbanestigen_gallery2.jpg" alt="Bjergbanestien" />
-        <button>More</button>
-
-        <section></section>
-
-        <button class="btn">Flora and Fauna</button>
+        <section class="modal" id="modal">
+          <p id="content"></p>
+        </section>
+        <div class="flex gap">
+        <button onclick="addContent ()" class="btn" id="FaF">Flora and Fauna</button>
         <button class="btn">Amenities</button>
         <button class="btn">Map of the route</button>
+        </div>  
       </article>
     </section>
 
