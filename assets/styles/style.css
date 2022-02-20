@@ -9,6 +9,7 @@
 :root {
     --green: #204330;
     --yellow: #fedf48;
+    --lighteryellow: #fee048d3;
 }
 
 .flex {
@@ -150,15 +151,26 @@ p {
 footer {
     background-color: var(--green);
     color: var(--yellow);
-    padding: 3rem;
-    gap: 4rem;
+    padding: 4vw;
+    gap: 1rem;
     flex-direction: column;
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 4vw;
+    color: var(--lighteryellow);
+    font-weight: lighter;
+    text-align: center;
 }
+
 .fa-facebook, .fa-instagram {
-    font-size: 4rem;
-    color: var(--yellow);
+    font-family: fontawesome;
+    font-size: 7vw;
+    font-style: normal;
+    color: var(--lighteryellow);
+}
+
+footer div {
+    gap: 1rem;
+    align-self: center;
 }
