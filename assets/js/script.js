@@ -2,25 +2,31 @@ document.getElementById('card1').addEventListener('click', function (){
 document.getElementById('article').classList.toggle('hide')
 });
 
+document.getElementById('card2').addEventListener('click', function (){
+  document.getElementById('article2').classList.toggle('hide')
+  });
 
-let content = 'Hello'
-document.getElementById('FaF').addEventListener('click', function () {
-if (document.getElementById('content').innerHTML = '') {
-    document.getElementById('content').innerHTML = content
-} else {
-    document.getElementById('content').innerHTML = '';
+
+function togglePopupOne(){
+  document.getElementById('popup-1').classList.toggle("active")
 }
-})
 
-function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.innerHTML === "Hello") {
-      x.innerHTML = "Swapped text!";
-    } else {
-      x.innerHTML = "Hello";
-    }
-  }
+function togglePopupTwo(){
+  document.getElementById('popup-2').classList.toggle("active")
+}
 
- function addContent () {
-     
- } 
+function togglePopupThree(){
+  document.getElementById('popup-3').classList.toggle("active")
+}
+
+function togglePopupFour(){
+  document.getElementById('popup-4').classList.toggle("active")
+}
+
+function togglePopupFive(){
+  document.getElementById('popup-5').classList.toggle("active")
+}
+
+function togglePopupSix(){
+  document.getElementById('popup-6').classList.toggle("active")
+}
