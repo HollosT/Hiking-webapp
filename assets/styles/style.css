@@ -191,9 +191,6 @@ p {
     display: none;
 }
 
-main:nth-child(5) .overlay {
-    /* top: 100%; */
-}
 .popup h2 {
     font-size: 5vw;
     text-align: left;
