@@ -6,6 +6,9 @@
     font-family: Arial, sans-serif;
 }
 
+a {
+    display: inline-block;
+}
 :root {
     --green: #204330;
     --yellow: #fedf48;
@@ -39,8 +42,8 @@ nav {
 }
 
 nav img {
-    width: 15vw;
-    height: 15vw;
+    width: 3rem;
+    height: auto;
 }
 
 .hide {
@@ -132,7 +135,6 @@ h4 {
 
 .main-card {
     padding: 0.5rem 1rem;
-    
 }
 
 h3 {
@@ -154,16 +156,19 @@ p {
 
 .detailedCards {
     border-radius: 1rem;
-    background-color: rgba(190, 188, 188, 0.808);
+    background-color: rgba(219, 228, 210, 0.808);
     padding: 2rem 1rem;
     margin-top: .5rem;
 }
 
-
-
 .detailedCards p {
     color: rgba(0, 0, 0, 0.534);
     padding: .5rem 0;
+}
+
+.detailedCards strong {
+    font-size: 3.3vw;
+    font-weight: bolder;
 }
 
 .detailedCards button:nth-child(5) {
@@ -171,19 +176,23 @@ p {
     margin-bottom: 1rem;
     align-content: center;
     display: flex;
-
 }
+
 
 /* card popup */
 .popup .overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vw;
+    height: 270vh;
     background-color: rgba(0,0,0,0.7);
     z-index: 1;
     display: none;
+}
+
+main:nth-child(5) .overlay {
+    /* top: 100%; */
 }
 .popup h2 {
     font-size: 5vw;
@@ -191,7 +200,7 @@ p {
 }
 .popup .content {
     position: absolute;
-    top: 120%;
+    /* top: 120%; */
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     background: #fff;
@@ -256,7 +265,7 @@ img {
 footer {
     background-color: var(--green);
     color: var(--yellow);
-    padding: 4vw;
+    padding: 1rem 0 2rem 0;
     gap: 1rem;
     flex-direction: column;
 }
