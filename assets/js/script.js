@@ -30,21 +30,27 @@ document.getElementById('card6').addEventListener('click', function () {
 
 document.getElementById('egholmMoreBtn').addEventListener('click', function () {
   document.getElementById('egholmMoreGallery').classList.toggle('hide')
+  document.getElementById('egholmMoreBtn').classList.toggle('btn-clicked')
+
 })
 
 document.getElementById('nordMoreBtn').addEventListener('click', function () {
+  document.getElementById('nordMoreBtn').classList.toggle('btn-clicked')
   document.getElementById('nordMoreGallery').classList.toggle('hide')
 })
 
 document.getElementById('sydMoreBtn').addEventListener('click', function () {
+  document.getElementById('sydMoreBtn').classList.toggle('btn-clicked')
   document.getElementById('sydMoreGallery').classList.toggle('hide')
 })
 
 document.getElementById('mulbjergeMoreBtn').addEventListener('click', function () {
+  document.getElementById('mulbjergeMoreBtn').classList.toggle('btn-clicked')
   document.getElementById('mulbjergeMoreGallery').classList.toggle('hide')
 })
 
 document.getElementById('poulstrupMoreBtn').addEventListener('click', function () {
+  document.getElementById('poulstrupMoreBtn').classList.toggle('btn-clicked')
   document.getElementById('poulstrupMoreGallery').classList.toggle('hide')
 })
 
@@ -53,7 +59,8 @@ document.getElementById('poulstrupMoreBtn').addEventListener('click', function (
 //* Filter
 //* Less than 6km
 document.getElementById('btn5').addEventListener('click', function () {
-  let changedContent = 'Show all';
+  //let changedContent = 'Show all';
+  document.getElementById('btn5').classList.toggle('btn-clicked')
   document.getElementById('card1').classList.toggle('hide')
   document.getElementById('card2').classList.toggle('hide')
   document.getElementById('card5').classList.toggle('hide')
@@ -75,6 +82,7 @@ document.getElementById('btn5').addEventListener('click', function () {
 
 //* CLose to the Centre
 document.getElementById('btnCentre').addEventListener('click', function () {
+  document.getElementById('btnCentre').classList.toggle('btn-clicked')
   document.getElementById('card1').classList.toggle('hide')
   document.getElementById('card4').classList.toggle('hide')
   document.getElementById('Mulb').classList.toggle('fa-location-dot')
@@ -85,6 +93,7 @@ document.getElementById('btnCentre').addEventListener('click', function () {
 
 //*Bike routes
 document.getElementById('btnBike').addEventListener('click', function () {
+  document.getElementById('btnBike').classList.toggle('btn-clicked')
   document.getElementById('card2').classList.toggle('hide')
   document.getElementById('card3').classList.toggle('hide')
   document.getElementById('card5').classList.toggle('hide')
