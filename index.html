@@ -27,23 +27,23 @@
 
   <main>
     <!-- map -->
-    <section class="map">
-      <i class="fa-solid fa-location-dot firstDot" id=""></i>
-      <i class="fa-solid fa-location-dot secondDot"></i>
-      <i class="fa-solid fa-location-dot thirdDot"></i>
-      <i class="fa-solid fa-location-dot fourthDot"></i>
-      <i class="fa-solid fa-location-dot fifthDot"></i>
-      <i class="fa-solid fa-location-dot sixthDot"></i>
+    <section class="map" id="map">
+      <i class="fa-solid fa-location-dot firstDot" id="Mulb"></i>
+      <i class="fa-solid fa-location-dot secondDot" id="Pols"></i>
+      <i class="fa-solid fa-location-dot thirdDot" id="Bjerg"></i>
+      <i class="fa-solid fa-location-dot fourthDot" id="OSyd"></i>
+      <i class="fa-solid fa-location-dot fifthDot" id="ONord"></i>
+      <i class="fa-solid fa-location-dot sixthDot" id="Egholm"></i>
   
     </section>
     <!-- filter section -->
     <section>
       <h2>Let's go hiking!</h2>
       <h4>What routes are you looking for?</h4>
-      <div class="flex, btn-div" id="buttons">
-        <button class="btn">Show all</button>
-        <button class="btn">Less than 6km</button>
-        <button class="btn">Near the center</button>
+      <div class="flex, btn-div">
+        <button class="btn" id="btnBike">Bike route</button>
+        <button class="btn" id="btn5">Less then 5km</button>
+        <button class="btn" id="btnCentre">Near the center</button>
       </div>
     </section>
 
@@ -68,7 +68,11 @@
               <img src="assets/images/Bjergbanestigen_gallery1.jpg" alt="Bjergbanestien" />
               <img src="assets/images/Bjergbanestigen_gallery2.jpg" alt="Bjergbanestien" />
             </div>
-            <button class="btn">More</button>
+            <div class="flex gap hide" id="bjergMoreGallery">
+              <img src="assets/images/Bjergbanestigen_gallery1.jpg" alt="Bjergbanestien" />
+              <img src="assets/images/Bjergbanestigen_gallery2.jpg" alt="Bjergbanestien" />
+            </div>
+            <button class="btn" id="bjergMoreBtn">More</button>
 
             <!-- buttons -->
 
@@ -190,7 +194,7 @@
           Østerådalen is a popular excursion destination that provide possibilities to runners, bikers, walkers.
         </p>
         <div class="flex gap">
-          <img src="assets/images/sterdalenNord_gallery1.jpg" alt="Oesteraadalen Nord" />
+          <img src="assets/images/sterdalenNord_gallery1.jpg" alt="Oesteraadalen Nord" />
           <img src="assets/images/sterdalenNord_gallery2.jpg" alt="Oesteraadalen Nord" />
         </div>
         <button class="btn">More</button>
@@ -416,6 +420,12 @@
         </div>
 
       </article>
+    </section>
+
+    <section class="mapup flex">
+      <a href="#map">
+        <i class="fa-solid fa-up"></i>
+        <i class="fa-solid fa-map"></i></a>
     </section>
   </main>
 

@@ -23,6 +23,56 @@ document.getElementById('card3').addEventListener('click', function (){
         document.getElementById('article6').classList.toggle('hide')
         });
       
+//* More pictures are added to the card
+document.getElementById('bjergMoreBtn').addEventListener('click', function () {
+  document.getElementById('bjergMoreGallery').classList.toggle('hide')
+})
+
+//* Filter
+//* Less than 6km
+document.getElementById('btn5').addEventListener('click', function() {
+  let changedContent = 'Show all';
+  document.getElementById('card1').classList.toggle('hide')
+  document.getElementById('card2').classList.toggle('hide')
+  document.getElementById('card5').classList.toggle('hide')
+  document.getElementById('card6').classList.toggle('hide')
+  document.getElementById('OSyd').classList.toggle('fa-location-dot')
+  document.getElementById('Bjerg').classList.toggle('fa-location-dot')
+
+
+  //* We wanted to change the text of the btn when it is clicked, we did not succeed
+  //if(document. getElementById('btn5'). clicked == true) {
+    //console.log('Hello')
+    //*document.getElementById('btn5').textContent = 'Show all';
+  //}else {
+    //changedContent = "Less then 5km"
+    //document.getElementById('btn5').textContent = changedContent;
+  //}
+})
+
+
+//* CLose to the Centre
+document.getElementById('btnCentre').addEventListener('click', function() {
+  document.getElementById('card1').classList.toggle('hide')
+  document.getElementById('card4').classList.toggle('hide')
+  document.getElementById('Mulb').classList.toggle('fa-location-dot')
+  document.getElementById('Bjerg').classList.toggle('fa-location-dot')
+  document.getElementById('Pols').classList.toggle('fa-location-dot')
+  document.getElementById('Egholm').classList.toggle('fa-location-dot')
+})
+
+//*Bike routes
+document.getElementById('btnBike').addEventListener('click', function() {
+  document.getElementById('card2').classList.toggle('hide')
+  document.getElementById('card3').classList.toggle('hide')
+  document.getElementById('card5').classList.toggle('hide')
+  document.getElementById('card6').classList.toggle('hide')
+  document.getElementById('ONord').classList.toggle('fa-location-dot')
+  document.getElementById('Egholm').classList.toggle('fa-location-dot')
+  document.getElementById('Pols').classList.toggle('fa-location-dot')
+  document.getElementById('Mulb').classList.toggle('fa-location-dot')
+
+})
 
 
 

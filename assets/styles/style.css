@@ -4,11 +4,27 @@
     box-sizing: border-box;
     font-size: 18px;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
     display: inline-block;
+    background-color: var(--green);
+    padding: .5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-style: none;
+    box-shadow: 3px 3px 5px rgba(94, 94, 94, 0.467);
+    margin-bottom: 1rem;
 }
+
+.mapup {
+    align-self: flex-end;
+}
+
 
 :root {
     --green: #204330;
@@ -181,7 +197,7 @@ p {
     font-weight: bolder;
 }
 
-.detailedCards button:nth-child(5) {
+.detailedCards button:nth-child(6) {
     margin: .5rem auto;
     margin-bottom: 1rem;
     align-content: center;
