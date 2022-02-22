@@ -9,6 +9,7 @@
 a {
     display: inline-block;
 }
+
 :root {
     --green: #204330;
     --yellow: #fedf48;
@@ -28,8 +29,6 @@ h1 {
 h2 {
     font-family: 'Noticia Text', serif;
 }
-
-
 
 
 /* header */
@@ -295,4 +294,53 @@ footer p {
 footer div {
     gap: 1rem;
     align-self: center;
+}
+
+
+/* POI */
+.fa-solid {
+    font-family: fontawesome;
+    color: red;
+    font-size: 7vw;
+    z-index: 100;
+}
+
+.map {
+    position: relative;
+}
+
+.firstDot {
+    position: absolute;
+    top: 83%;
+    left: 87%;
+}
+
+.secondDot {
+    position: absolute;
+    top: 42%;
+    left: 19%;
+}
+
+.thirdDot {
+    position: absolute;
+    top: 38%;
+    left: 6%;
+}
+
+.fourthDot {
+    position: absolute;
+    top: 25%;
+    left: 22%;
+}
+
+.fifthDot {
+    position: absolute;
+    top: 22%;
+    left: 16%;
+}
+
+.sixthDot {
+    position: absolute;
+    top: 4%;
+    left: 7%;
 }
