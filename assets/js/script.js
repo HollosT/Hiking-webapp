@@ -1,36 +1,58 @@
-document.getElementById('card1').addEventListener('click', function (){
-document.getElementById('article').classList.toggle('hide')
+document.getElementById('card1').addEventListener('click', function () {
+  document.getElementById('article').classList.toggle('hide')
 });
 
-document.getElementById('card2').addEventListener('click', function (){
+document.getElementById('card2').addEventListener('click', function () {
   document.getElementById('article2').classList.toggle('hide')
-  });
+});
 
-document.getElementById('card3').addEventListener('click', function (){
+document.getElementById('card3').addEventListener('click', function () {
   document.getElementById('article3').classList.toggle('hide')
-  });
+});
 
-  document.getElementById('card4').addEventListener('click', function (){
-    document.getElementById('article4').classList.toggle('hide')
-    });
-  
-    document.getElementById('card5').addEventListener('click', function (){
-      document.getElementById('article5').classList.toggle('hide')
-      });
+document.getElementById('card4').addEventListener('click', function () {
+  document.getElementById('article4').classList.toggle('hide')
+});
 
-    
-      document.getElementById('card6').addEventListener('click', function (){
-        document.getElementById('article6').classList.toggle('hide')
-        });
-      
+document.getElementById('card5').addEventListener('click', function () {
+  document.getElementById('article5').classList.toggle('hide')
+});
+
+
+document.getElementById('card6').addEventListener('click', function () {
+  document.getElementById('article6').classList.toggle('hide')
+});
+
 //* More pictures are added to the card
-document.getElementById('bjergMoreBtn').addEventListener('click', function () {
-  document.getElementById('bjergMoreGallery').classList.toggle('hide')
+// document.getElementById('bjergMoreBtn').addEventListener('click', function () {
+//   document.getElementById('bjergMoreGallery').classList.toggle('hide')
+// })
+
+document.getElementById('egholmMoreBtn').addEventListener('click', function () {
+  document.getElementById('egholmMoreGallery').classList.toggle('hide')
 })
+
+document.getElementById('nordMoreBtn').addEventListener('click', function () {
+  document.getElementById('nordMoreGallery').classList.toggle('hide')
+})
+
+document.getElementById('sydMoreBtn').addEventListener('click', function () {
+  document.getElementById('sydMoreGallery').classList.toggle('hide')
+})
+
+document.getElementById('mulbjergeMoreBtn').addEventListener('click', function () {
+  document.getElementById('mulbjergeMoreGallery').classList.toggle('hide')
+})
+
+document.getElementById('poulstrupMoreBtn').addEventListener('click', function () {
+  document.getElementById('poulstrupMoreGallery').classList.toggle('hide')
+})
+
+
 
 //* Filter
 //* Less than 6km
-document.getElementById('btn5').addEventListener('click', function() {
+document.getElementById('btn5').addEventListener('click', function () {
   let changedContent = 'Show all';
   document.getElementById('card1').classList.toggle('hide')
   document.getElementById('card2').classList.toggle('hide')
@@ -42,17 +64,17 @@ document.getElementById('btn5').addEventListener('click', function() {
 
   //* We wanted to change the text of the btn when it is clicked, we did not succeed
   //if(document. getElementById('btn5'). clicked == true) {
-    //console.log('Hello')
-    //*document.getElementById('btn5').textContent = 'Show all';
+  //console.log('Hello')
+  //*document.getElementById('btn5').textContent = 'Show all';
   //}else {
-    //changedContent = "Less then 5km"
-    //document.getElementById('btn5').textContent = changedContent;
+  //changedContent = "Less then 5km"
+  //document.getElementById('btn5').textContent = changedContent;
   //}
 })
 
 
 //* CLose to the Centre
-document.getElementById('btnCentre').addEventListener('click', function() {
+document.getElementById('btnCentre').addEventListener('click', function () {
   document.getElementById('card1').classList.toggle('hide')
   document.getElementById('card4').classList.toggle('hide')
   document.getElementById('Mulb').classList.toggle('fa-location-dot')
@@ -62,7 +84,7 @@ document.getElementById('btnCentre').addEventListener('click', function() {
 })
 
 //*Bike routes
-document.getElementById('btnBike').addEventListener('click', function() {
+document.getElementById('btnBike').addEventListener('click', function () {
   document.getElementById('card2').classList.toggle('hide')
   document.getElementById('card3').classList.toggle('hide')
   document.getElementById('card5').classList.toggle('hide')
@@ -77,75 +99,75 @@ document.getElementById('btnBike').addEventListener('click', function() {
 
 
 //* Function 
-function togglePopupOne(){
+function togglePopupOne() {
   document.getElementById('popup-1').classList.toggle("active")
 }
 
-function togglePopupTwo(){
+function togglePopupTwo() {
   document.getElementById('popup-2').classList.toggle("active")
 }
 
-function togglePopupThree(){
+function togglePopupThree() {
   document.getElementById('popup-3').classList.toggle("active")
 }
 
-function togglePopupFour(){
+function togglePopupFour() {
   document.getElementById('popup-4').classList.toggle("active")
 }
 
-function togglePopupFive(){
+function togglePopupFive() {
   document.getElementById('popup-5').classList.toggle("active")
 }
 
-function togglePopupSix(){
+function togglePopupSix() {
   document.getElementById('popup-6').classList.toggle("active")
 }
 
-function togglePopupSeven(){
+function togglePopupSeven() {
   document.getElementById('popup-7').classList.toggle("active")
 }
 
-function togglePopupEight(){
+function togglePopupEight() {
   document.getElementById('popup-8').classList.toggle("active")
 }
 
-function togglePopupNine(){
+function togglePopupNine() {
   document.getElementById('popup-9').classList.toggle("active")
 }
 
-function togglePopupTen(){
+function togglePopupTen() {
   document.getElementById('popup-10').classList.toggle("active")
 }
 
-function togglePopupEleven(){
+function togglePopupEleven() {
   document.getElementById('popup-11').classList.toggle("active")
 }
 
-function togglePopupTwelve(){
+function togglePopupTwelve() {
   document.getElementById('popup-12').classList.toggle("active")
 }
 
-function togglePopupThirteen(){
+function togglePopupThirteen() {
   document.getElementById('popup-13').classList.toggle("active")
 }
 
-function togglePopupFourteen(){
+function togglePopupFourteen() {
   document.getElementById('popup-14').classList.toggle("active")
 }
 
-function togglePopupFifteen(){
+function togglePopupFifteen() {
   document.getElementById('popup-15').classList.toggle("active")
 }
 
 
-function togglePopupSixteen(){
+function togglePopupSixteen() {
   document.getElementById('popup-16').classList.toggle("active")
 }
 
-function togglePopupSeventeen(){
+function togglePopupSeventeen() {
   document.getElementById('popup-17').classList.toggle("active")
 }
 
-function togglePopupEighteen(){
+function togglePopupEighteen() {
   document.getElementById('popup-18').classList.toggle("active")
 }

@@ -11,7 +11,9 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@700&display=swap');
   </style>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -34,7 +36,7 @@
       <i class="fa-solid fa-location-dot fourthDot" id="OSyd"></i>
       <i class="fa-solid fa-location-dot fifthDot" id="ONord"></i>
       <i class="fa-solid fa-location-dot sixthDot" id="Egholm"></i>
-  
+
     </section>
     <!-- filter section -->
     <section>
@@ -42,75 +44,76 @@
       <h4>What routes are you looking for?</h4>
       <div class="flex, btn-div">
         <button class="btn" id="btnBike">Bike route</button>
-        <button class="btn" id="btn5">Less then 5km</button>
-        <button class="btn" id="btnCentre">Near the center</button>
+        <button class="btn" id="btn5">Less than 5km</button>
+        <button class="btn" id="btnCentre">Near center</button>
       </div>
     </section>
 
     <!-- first card -->
     <section class=" main-card">
-          <div class="flex card" id="card1">
-            <h3>Bjergbanestien</h3>
-            <p>1 walking route, 14km<br>
-              1 biking path</p>
+      <div class="flex card" id="card1">
+        <h3>Bjergbanestien</h3>
+        <p>1 walking route, 14km<br>
+          1 biking path</p>
+      </div>
+
+      <!-- card after cick -->
+      <article id="article" class=" detailedCards hide">
+        <p> <strong>Route: </strong>from Sventrup via Oldstien to Nibe/Godthaab</p>
+        <p><strong>How to get there: </strong>take the train from the Aalborg station.</p>
+        <p>
+          From Skalskoven (west from Nibe), the path continues along Nørregade,
+          which leads to the center of Nibe, where Nibe railway station once stood.
+          The path continues through Nibe and towards Valpsund along the regional
+          cycle route 29 (dark blue color on the map). </p>
+        <div class="flex gap">
+          <img src="assets/images/Bjergbanestigen_gallery1.jpg" alt="Bjergbanestien" />
+          <img src="assets/images/Bjergbanestigen_gallery2.jpg" alt="Bjergbanestien" />
+        </div>
+
+        <!-- <div class="flex gap hide" id="bjergMoreGallery">
+          <img src="assets/images/Bjergbanestigen_gallery1.jpg" alt="Bjergbanestien" />
+          <img src="assets/images/Bjergbanestigen_gallery2.jpg" alt="Bjergbanestien" />
+        </div>
+        <button class="btn" id="bjergMoreBtn">More</button> -->
+
+        <!-- buttons -->
+
+        <!-- flora and fauna -->
+        <div class="flex gap">
+          <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn" onclick="togglePopupOne()">&times;</div>
+              <h2>Flora and fauna</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
+            </div>
           </div>
+          <button class="btn flora" onclick="togglePopupOne()">Flora and Fauna</button>
 
-          <!-- card after cick -->
-          <article id="article" class=" detailedCards hide">
-            <p> <strong>Route: </strong>from Sventrup via Oldstien to Nibe/Godthaab</p>
-            <p><strong>How to get there: </strong>take the train from the Aalborg station.</p>
-            <p>
-              From Skalskoven (west from Nibe), the path continues along Nørregade,
-              which leads to the center of Nibe, where Nibe railway station once stood.
-              The path continues through Nibe and towards Valpsund along the regional
-              cycle route 29 (dark blue color on the map). </p>
-            <div class="flex gap">
-              <img src="assets/images/Bjergbanestigen_gallery1.jpg" alt="Bjergbanestien" />
-              <img src="assets/images/Bjergbanestigen_gallery2.jpg" alt="Bjergbanestien" />
+          <!-- amenities -->
+          <div class="popup" id="popup-2">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn" onclick="togglePopupTwo()">&times;</div>
+              <h2>Amenities</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
             </div>
-            <div class="flex gap hide" id="bjergMoreGallery">
-              <img src="assets/images/Bjergbanestigen_gallery1.jpg" alt="Bjergbanestien" />
-              <img src="assets/images/Bjergbanestigen_gallery2.jpg" alt="Bjergbanestien" />
+          </div>
+          <button class="btn" onclick="togglePopupTwo()">Amenities & To Do</button>
+
+          <!-- map -->
+          <div class="popup" id="popup-3">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn" onclick="togglePopupThree()">&times;</div>
+              <h2>Map of the route</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
             </div>
-            <button class="btn" id="bjergMoreBtn">More</button>
-
-            <!-- buttons -->
-
-            <!-- flora and fauna -->
-            <div class="flex gap">
-              <div class="popup" id="popup-1">
-                <div class="overlay"></div>
-                <div class="content">
-                  <div class="close-btn" onclick="togglePopupOne()">&times;</div>
-                  <h2>Flora and fauna</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
-                </div>
-              </div>
-              <button class="btn" onclick="togglePopupOne()">Flora and Fauna</button>
-
-              <!-- amenities -->
-              <div class="popup" id="popup-2">
-                <div class="overlay"></div>
-                <div class="content">
-                  <div class="close-btn" onclick="togglePopupTwo()">&times;</div>
-                  <h2>Amenities</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
-                </div>
-              </div>
-              <button class="btn" onclick="togglePopupTwo()">Amenities</button>
-
-              <!-- map -->
-              <div class="popup" id="popup-3">
-                <div class="overlay"></div>
-                <div class="content">
-                  <div class="close-btn" onclick="togglePopupThree()">&times;</div>
-                  <h2>Map of the route</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
-                </div>
-              </div>
-              <button class="btn" onclick="togglePopupThree()">Route map</button>
-            </div>
-          </article>
+          </div>
+          <button class="btn" onclick="togglePopupThree()">Route map</button>
+        </div>
+      </article>
     </section>
 
     <!-- second card -->
@@ -134,7 +137,11 @@
           <img src="assets/images/Egholm_gallery1.jpg" alt="Egholm" />
           <img src="assets/images/Egholm_gallery2.jpg" alt="Egholm" />
         </div>
-        <button class="btn">More</button>
+        <div class="flex gap hide" id="egholmMoreGallery">
+          <img src="assets/images/Egholm-02.jpg" alt="Egholm" />
+          <img src="assets/images/Egholm-06.jpg" alt="Egholm" />
+        </div>
+        <button class="btn" id="egholmMoreBtn">More</button>
 
         <!-- buttons -->
         <div class="flex gap">
@@ -158,7 +165,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
             </div>
           </div>
-          <button class="btn" onclick="togglePopupFive()">Amenities</button>
+          <button class="btn" onclick="togglePopupFive()">Amenities & To Do</button>
 
           <!--  map -->
           <div class="popup" id="popup-6">
@@ -194,10 +201,15 @@
           Østerådalen is a popular excursion destination that provide possibilities to runners, bikers, walkers.
         </p>
         <div class="flex gap">
-          <img src="assets/images/sterdalenNord_gallery1.jpg" alt="Oesteraadalen Nord" />
-          <img src="assets/images/sterdalenNord_gallery2.jpg" alt="Oesteraadalen Nord" />
+          <img src="assets/images/Nord_gallery1.jpg" alt="Oesteraadalen Nord" />
+          <img src="assets/images/Nord_gallery2.jpg" alt="Oesteraadalen Nord" />
         </div>
-        <button class="btn">More</button>
+
+        <div class="flex gap hide" id="nordMoreGallery">
+          <img src="assets/images/Nord-03.jpg" alt="Oesteraadalen Nord" />
+          <img src="assets/images/Nord-18.jpg" alt="Oesteraadalen Nord" />
+        </div>
+        <button class="btn" id="nordMoreBtn">More</button>
 
         <!-- buttons -->
         <div class="flex gap">
@@ -222,7 +234,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
             </div>
           </div>
-          <button class="btn" onclick="togglePopupEight()">Amenities</button>
+          <button class="btn" onclick="togglePopupEight()">Amenities & To Do</button>
 
           <!-- map -->
           <div class="popup" id="popup-9">
@@ -252,10 +264,14 @@
           in Svenstrup to Aalborg Centrum via Oesteraadalen Nord. There is only one path for walking porpuses.
         </p>
         <div class="flex gap"></div>
-        <img src="assets/images/sterdalenSyd_gallery1.jpg" alt="Oesteraadalen Syd" />
-        <img src="assets/images/sterdalenSyd_gallery2.jpg" alt="Oesteraadalen Syd" />
+        <img src="assets/images/Syd_gallery1.jpg" alt="Oesteraadalen Syd" />
+        <img src="assets/images/Syd_gallery2.jpg" alt="Oesteraadalen Syd" />
 
-        <button class="btn">More</button>
+        <div class="flex gap hide" id="sydMoreGallery">
+          <img src="assets/images/Syd-05.jpg" alt="Oesteraadalen Syd" />
+          <img src="assets/images/Syd-08.jpg" alt="Oesteraadalen Syd" />
+        </div>
+        <button class="btn" id="sydMoreBtn">More</button>
 
         <!-- buttons -->
         <div class="flex gap">
@@ -280,7 +296,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
             </div>
           </div>
-          <button class="btn" onclick="togglePopupEleven()">Amenities</button>
+          <button class="btn" onclick="togglePopupEleven()">Amenities & To Do</button>
 
           <!-- map -->
           <div class="popup" id="popup-12">
@@ -318,7 +334,10 @@
           <img src="assets/images/Mulbjerge_gallery1.jpg" alt="Mulbjerge" />
           <img src="assets/images/Mulbjerge_gallery2.jpg" alt="Mulbjerge" />
         </div>
-        <button class="btn">More</button>
+        <div class="flex gap hide" id="mulbjergeMoreGallery">
+          <img src="assets/images/Mulbjerge-02.jpg" alt="Mulbjerge" />
+        </div>
+        <button class="btn" id="mulbjergeMoreBtn">More</button>
 
         <!-- buttons -->
         <div class="flex gap">
@@ -343,7 +362,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
             </div>
           </div>
-          <button class="btn" onclick="togglePopupFourteen()">Amenities</button>
+          <button class="btn" onclick="togglePopupFourteen()">Amenities & To Do</button>
 
           <!-- map -->
           <div class="popup" id="popup-15">
@@ -376,11 +395,15 @@
           It's lakes can give you the true nature experience including every beauty of it.
         </p>
         <div class="flex gap">
-          <img src="assets/images/Poulstrup_gallery1.jpg" alt="Poulstrup" />
+          <img src="assets/images/PoulstrupSŤOgDallHede-04.jpg" alt="Poulstrup" />
           <img src="assets/images/Poulstrup_gallery2.jpg" alt="Poulstrup" />
         </div>
 
-        <button class="btn">More</button>
+        <div class="flex gap hide" id="poulstrupMoreGallery">
+          <img src="assets/images/PoulstrupSŤOgDallHede-10.jpg" alt="Poulstrup" />
+          <img src="assets/images/PoulstrupSŤOgDallHede-11.jpg" alt="Poulstrup" />
+        </div>
+        <button class="btn" id="poulstrupMoreBtn">More</button>
 
         <!-- buttons -->
         <div class="flex gap">
@@ -405,7 +428,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.</p>
             </div>
           </div>
-          <button class="btn" onclick="togglePopupSeventeen()">Amenities</button>
+          <button class="btn" onclick="togglePopupSeventeen()">Amenities & To Do</button>
 
           <!-- map -->
           <div class="popup" id="popup-18">
@@ -422,11 +445,13 @@
       </article>
     </section>
 
-    <section class="mapup flex">
-      <a href="#map">
-        <i class="fa-solid fa-up"></i>
-        <i class="fa-solid fa-map"></i></a>
-    </section>
+    <div class="btn-container flex">
+    <a href="#map" class="mapup flex">
+      <i class="fa-solid fa-angle-up"></i>
+      <i class="fa-solid fa-map"></i>
+    </a>
+  </div>
+
   </main>
 
   <footer class="flex">
