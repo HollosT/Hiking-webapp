@@ -72,6 +72,10 @@ section > div {
     z-index: 100;
 }
 
+.fa-solid-active {
+    color: rgb(170, 0, 0);
+}
+
 .map {
     position: relative;
 }
@@ -131,7 +135,7 @@ article div {
     height: fit-content;
     background-color: var(--green);
     padding: 0.5rem 0.8rem;
-    font-size: 3.5vw;
+    font-size: 3.2vw;
     font-weight: bold;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -150,7 +154,8 @@ article div {
 
 .btn-div {
     flex-direction: row;
-    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
 }
 
 
@@ -262,7 +267,7 @@ p {
     border-radius: 1rem;
     width: 300px;
     height: 300px;
-    z-index: 2;
+    z-index: 10;
     /*text-align:center;
     */padding: 20px;
     -webkit-transform: translate(-50%, -50%) scale(0);
@@ -318,6 +323,23 @@ p {
     margin-top: .5rem;
     background-size: cover;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.26);
+
+}
+/* Close Up arrow*/
+.up i {
+    padding: .5rem 1rem;
+    background-color: beige;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    margin-right: .3rem;
+    color: var(--green);
+    box-shadow: 3px 2px 3px rgba(117, 117, 105, 0.445);
+    z-index: 1;
 
 }
 /* Images */

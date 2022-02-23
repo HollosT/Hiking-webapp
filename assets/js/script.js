@@ -2,26 +2,51 @@ document.getElementById('card1').addEventListener('click', function () {
   document.getElementById('article').classList.toggle('hide')
 });
 
+      //* Arrow closes the cards
+document.getElementById('closeTheCard').addEventListener('click', function () {
+  document.getElementById('article').classList.toggle('hide')
+})
+
 document.getElementById('card2').addEventListener('click', function () {
   document.getElementById('article2').classList.toggle('hide')
 });
+//* Arrow closes the cards
+document.getElementById('closeTheCard2').addEventListener('click', function () {
+  document.getElementById('article2').classList.toggle('hide')
+})
 
 document.getElementById('card3').addEventListener('click', function () {
   document.getElementById('article3').classList.toggle('hide')
 });
+//* Arrow closes the cards
+document.getElementById('closeTheCard3').addEventListener('click', function () {
+  document.getElementById('article3').classList.toggle('hide')
+})
 
 document.getElementById('card4').addEventListener('click', function () {
   document.getElementById('article4').classList.toggle('hide')
 });
+//* Arrow closes the cards
+document.getElementById('closeTheCard4').addEventListener('click', function () {
+  document.getElementById('article4').classList.toggle('hide')
+})
 
 document.getElementById('card5').addEventListener('click', function () {
   document.getElementById('article5').classList.toggle('hide')
 });
+//* Arrow closes the cards
+document.getElementById('closeTheCard5').addEventListener('click', function () {
+  document.getElementById('article5').classList.toggle('hide')
+})
 
 
 document.getElementById('card6').addEventListener('click', function () {
   document.getElementById('article6').classList.toggle('hide')
 });
+//* Arrow closes the cards
+document.getElementById('closeTheCard6').addEventListener('click', function () {
+  document.getElementById('article6').classList.toggle('hide')
+})
 
 //* More pictures are added to the card
 // document.getElementById('bjergMoreBtn').addEventListener('click', function () {
@@ -56,6 +81,7 @@ document.getElementById('poulstrupMoreBtn').addEventListener('click', function (
 
 
 
+
 //* Filter
 //* Less than 6km
 document.getElementById('btn5').addEventListener('click', function () {
@@ -67,6 +93,13 @@ document.getElementById('btn5').addEventListener('click', function () {
   document.getElementById('card6').classList.toggle('hide')
   document.getElementById('OSyd').classList.toggle('fa-location-dot')
   document.getElementById('Bjerg').classList.toggle('fa-location-dot')
+  //* Change the color
+  document.getElementById('Mulb').classList.toggle('fa-solid-active')
+  document.getElementById('Pols').classList.toggle('fa-solid-active')
+  document.getElementById('ONord').classList.toggle('fa-solid-active')
+  document.getElementById('Egholm').classList.toggle('fa-solid-active')
+
+  
 
 
   //* We wanted to change the text of the btn when it is clicked, we did not succeed
@@ -80,6 +113,7 @@ document.getElementById('btn5').addEventListener('click', function () {
 })
 
 
+
 //* CLose to the Centre
 document.getElementById('btnCentre').addEventListener('click', function () {
   document.getElementById('btnCentre').classList.toggle('btn-clicked')
@@ -89,6 +123,10 @@ document.getElementById('btnCentre').addEventListener('click', function () {
   document.getElementById('Bjerg').classList.toggle('fa-location-dot')
   document.getElementById('Pols').classList.toggle('fa-location-dot')
   document.getElementById('Egholm').classList.toggle('fa-location-dot')
+
+  //* Change the color
+  document.getElementById('OSyd').classList.toggle('fa-solid-active')
+  document.getElementById('ONord').classList.toggle('fa-solid-active')
 })
 
 //*Bike routes
@@ -103,11 +141,14 @@ document.getElementById('btnBike').addEventListener('click', function () {
   document.getElementById('Pols').classList.toggle('fa-location-dot')
   document.getElementById('Mulb').classList.toggle('fa-location-dot')
 
+  //* Change the color
+  document.getElementById('OSyd').classList.toggle('fa-solid-active')
+  document.getElementById('Bjerg').classList.toggle('fa-solid-active')
 })
 
 
 
-//* Function 
+//* Functions 
 function togglePopupOne() {
   document.getElementById('popup-1').classList.toggle("active")
 }
