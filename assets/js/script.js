@@ -59,7 +59,7 @@ document.getElementById('poulstrupMoreBtn').addEventListener('click', function (
 //* Filter
 //* Less than 6km
 document.getElementById('btn5').addEventListener('click', function () {
-  //let changedContent = 'Show all';
+ // let changedContent = 'Show all';
   document.getElementById('btn5').classList.toggle('btn-clicked')
   document.getElementById('card1').classList.toggle('hide')
   document.getElementById('card2').classList.toggle('hide')
